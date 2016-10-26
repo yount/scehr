@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+    <div>
+        <div><h2>EHR招聘系统</h2></div>
+        <!--rsaKey-->
+        <input id="key" value="<%= key%>" type="hidden"/>
+        <div class="loginArea">
+            <div class="inputArea"><span class="nameText">用户名：</span><input type="text" id="userName" value="<%= username%>" placeholder="用户名/邮箱/手机号码"/></div>
+            <div class="inputArea"><span class="nameText">密码：</span><input type="password" id="passWord" value="<%= password%>" placeholder="密码"/></div>
+            <div class="checkboxArea">
+                <div class="checkboxBtn fl"><input type="checkbox" id="isSave"><div class="showBtn"></div></div><span class="fl">记住密码</span>
+            </div>
+            <div class="blurBtn loginBtn" id="loginBtn">登录</div>
+            <div class="blurBtn loginBtn" id="loginBtn"><a href="toRegister.do">注册</a></div>
+        </div>
+    </div>
+</body>
+</html>
